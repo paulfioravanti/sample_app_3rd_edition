@@ -24,5 +24,8 @@ module SampleApp
     config.active_record.raise_in_transactional_callbacks = true
     
     config.action_controller.include_all_helpers = false
+    
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
